@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#root{
+    display: flex;
+    justify-content: center;
+}
+
+.App{
+    width: 800px;
+}
+
+.post{
+    display: flex;
+    padding: 15px;
+    border: 2px solid teal;
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-item-enter {
+    transition: opacity 500ms ease-in;
+    opacity: 0;
+}
+.post-item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+}
+.post-item-exit {
+    transition: opacity 500ms ease-in;
+    opacity: 1;
+}
+.post-item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}

@@ -5,7 +5,7 @@ const PostItem =(props:any) => {
     return (
         <div className="post">
             <div className="post__content">
-                <strong>1. Javascript {props.index}</strong>
+                <strong>{props.post.id} Javascript {props.index}</strong>
                 <div>
                     {props.post.title} - {props.post.body}
                 </div>
